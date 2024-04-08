@@ -47,7 +47,7 @@ function App() {
                 <Route path="/*" element={<Missing />}/>
             </Routes>   */}
         <DataProvider>
-          <Header 
+          <Header  
               title ="BE Social"             
           />
           <Nav />

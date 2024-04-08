@@ -7,15 +7,8 @@ import PostPage from './PostPage';
 import About from './About';
 import Missing from './Missing';
 import Footer from './Footer';
-import Post from './Post';
-import PostLayout from './PostLayout';
 import EditPost from './EditPost';
-import {Routes,Route, Link,useNavigate} from "react-router-dom";
-import { useEffect, useState } from 'react';
-import {format} from 'date-fns';
-import api from './api/postss';
-import useWindowSize from './hooks/useWindowSize';
-import useAxiosFetch from './hooks/useAxiosFetch';
+import {Routes,Route} from "react-router-dom";
 import { DataProvider } from './context/DataContext';
 
 

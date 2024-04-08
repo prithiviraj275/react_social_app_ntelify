@@ -1,8 +1,5 @@
 import { createContext,useState,useEffect } from "react";
-import Post from '../Post';
-import PostLayout from '../PostLayout';
-import EditPost from '../EditPost';
-import {Routes,Route, Link,useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import {format} from 'date-fns';
 import api from '../api/postss';
 import useWindowSize from '../hooks/useWindowSize';

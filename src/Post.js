@@ -1,5 +1,5 @@
 import React from 'react'
-import {useParams,Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const Post = ({post}) => {
     // const {id} = useParams() // this can be used we pass the parameter in link

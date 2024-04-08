@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams, Link } from 'react-router-dom'
 
-const PostPage = ({ posts, handleDelete }) => {
+const PostPage = ({ posts, handleDelete, handleEdit }) => {
   
   const { id } = useParams();
 
@@ -18,7 +18,7 @@ const PostPage = ({ posts, handleDelete }) => {
   }
 
   // Find the post with the matching id
-  const post = posts.find(post => post.id === parseInt(id));
+  const post = posts.find(post => post.id === id);  
 
   // Check if post is found
   if (!post) {
@@ -43,6 +43,9 @@ const PostPage = ({ posts, handleDelete }) => {
         <p className='postDate'>{post.datetime}</p>
         <p className='postBody'>{post.body}</p>
         <button className='deleteButton' onClick={() => handleDelete(post.id)}>Delete Post</button>
+        <Link to ={`/edit/${post.id}`}>
+          <button className='editButton'>Edit Post</button>
+        </Link>
       </article>
     </main>
   );

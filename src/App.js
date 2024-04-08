@@ -16,6 +16,7 @@ import {format} from 'date-fns';
 import api from './api/postss';
 import useWindowSize from './hooks/useWindowSize';
 import useAxiosFetch from './hooks/useAxiosFetch';
+import { DataProvider } from './context/DataContext';
 
 
 function App() {
